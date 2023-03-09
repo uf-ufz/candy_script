@@ -1,7 +1,7 @@
 -- public.cdy_evaldat source
 
 CREATE OR REPLACE VIEW public.cdy_evaldat
-AS SELECT v.key AS meas_id,
+AS SELECT distinct v.key AS meas_id,
     s.fname,
     s.snr,
     s.utlg,
